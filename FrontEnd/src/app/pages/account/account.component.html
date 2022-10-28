@@ -1,0 +1,80 @@
+<app-navbar></app-navbar>
+<div class="student-profile py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card shadow-sm">
+            <div class="card-header bg-transparent text-center">
+              <img class="profile_img" src="https://cdn1.vectorstock.com/i/1000x1000/38/05/male-face-avatar-logo-template-pictograph-vector-11333805.jpg" alt="student dp">
+              <h3>{{user.data.userName}}</h3>
+            </div>
+            <div class="card-body">
+              <p class="mb-0"><strong class="pr-1">Student Name:</strong>{{user.data.name}}</p>
+              <p class="mb-0"><strong class="pr-1">Department:</strong>{{user.data.department}}</p>
+              <p class="mb-0"><strong class="pr-1">Semester:</strong>{{user.data.semester}}</p>
+            </div>
+            <button type="button" class="btn btn-white btn-lg btn-block">Notifications</button>
+            <button type="button" class="btn btn-white btn-lg btn-block">Report</button>
+            <button type="button" class="btn btn-white btn-lg btn-block">Rate</button>
+          </div>
+        </div>
+        
+        <div class="col-lg-8">
+          <div class="card shadow-sm">
+            <div class="card-header bg-transparent border-0">
+              <h3 class="mb-0"><i class="far fa-clone pr-1"></i>General Information</h3>
+            </div>
+            <div class="card-body pt-0">
+              <table class="table table-bordered">
+                <tr>
+                  <th width="30%">Register Number</th>
+                  <td width="2%">:</td>
+                  <td>{{user.data.registerNumber}}</td>
+                </tr>
+                <tr>
+                  <tr>
+                    <th width="30%">Address</th>
+                    <td width="2%">:</td>
+                    <td>{{user.data.address}}</td>
+                  </tr>
+                  <tr>
+                  <th width="30%">Email	</th>
+                  <td width="2%">:</td>
+                  <td>{{user.data.email}}</td>
+                </tr>
+                
+                <tr>
+                  <th width="30%">Boarding Point</th>
+                  <td width="2%">:</td>
+                  <td>{{user.data.boardingPoint}}</td>
+                </tr>
+              </table>
+              <p class="h6">Want to change your Password? <a href="#" class="link-primary">Click here</a></p><br><br><br>
+
+              <div class="card border-success mb-3" style="max-width: 40rem;height: 23rem;margin-left: 5rem;">
+                <div class="card-header bg-transparent border-success"><h3>Student Bus Pass</h3>
+                  Christ Nagar College,
+                  Maranalloor
+                  <div class="image">
+                  <img src="https://th.bing.com/th/id/R.fd15151f4044bfbb2133c963fcb471d0?rik=KgydzFCyi9Tyzg&riu=http%3a%2f%2fwww.clipartbest.com%2fcliparts%2faTq%2fx84%2faTqx84REc.png&ehk=DeCHdJH3p%2fTjMGMzyY7E1DtJ%2bkhGqa5enQwq%2fb3dc2o%3d&risl=&pid=ImgRaw&r=0" style="max-width: 15rem;" alt="">
+                  </div>
+                </div>
+                <div class="card-body text-success">
+                  <p>Student Name : ................................................................</p>
+                   
+                   <div class="flex"><p>Course : ...........................</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>Year : ..............................</p></div> 
+                   <p>Boarding Pt : ..................................................</p>
+                   <p style="color: rgb(190, 49, 49);">Valid only for the academic year 2022-23</p>
+                  <div class="card-footer bg-transparent border-success">THIS PASS MAY BE REVOKED AT ANY TIME FOR POOR CONDUCT WHILE ON THE BUS OR WHILE WAITING AT THE BUS STOP</div>
+              </div>
+
+             
+            </div>
+          </div>
+            <div style="height: 26px"></div>
+          
+        </div>
+      </div>
+    </div>
+    
+  </div>
